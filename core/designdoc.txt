@@ -1,0 +1,123 @@
+	
+
+** Reformat this doc, and links
+()“Space Bar One” works (like air force one). Abbreviate SBO?)
+
+A cross between Starflight, Nethack, Homm with a healthy dose of Kaiser Soze Sauce
+Open source is a really good fit. (“to encourage more and better space adventures”)
+
+<too many games of civ, league of legends, etc. it's more fun to program>
+<the plot and what really happened - player did go to an alpha temple, but alphas got kicked out. So need to go by force. And reminder plot should be: simple, fun, seamless, memorable.>
+[playful, exciting, adventurous]
+Once upon a time, in the dark ages before the internet when I was barely old enough to read, I discovered a strange game named Starflight... found the artifact of great power. This game attempts to recreate that experience. And some other stuff. I didn't actually play the game, I could blame no barely being able to read, but in truth because it plot and quest structure made little sense. So I wandered the vast universe, visiting planet to planet, collecting mingerals to sell, when on the far side of the galaxy I discovered a mysterious artifact. And behold, it was an artifact of great power! Buried and lost as a relic of time. Finding that artifact was a gear memorial experience, something unexpected and awesome that changed the nature of the game and the game experience (although the stars still exploded and killed me). Space Bar attempts to recrate that feeling - the event of being alone in a vast and hostile universe, when finally the great works of exploration emerges as an experience that couldn't have been planned for, and that defines that journey ahead. Oh yeah, and there's some other stuff I like thrown in.
+
+The dream: system in danger, had invested in an outpost (or self-pgraded), areas is known to me
+Discovery, explore
+Realistic systems
+Player makes the story- choices, influence events that shape the story
+Emergent world, different game each time. Memorable stories emerge, like dwarf fortress.
+(maybe explain why each of these are important - gaining power, the journey. Needs to have a finite start and ending / mmo problem)
+Tactical combat
+Upgrades
+
+4 features, all emergent:
+Exploration (with emergent, feeling of map growth and home)
+Characters / ship / story
+Tactics (with variety)
+Morale
+Plan out more emergent gameplay
+Dwarf fortress  https://www.reddit.com/r/dwarffortress/comments/3bgxbf/emergent_gameplay_in_df/
+(and a game that you can't search on the internet to solve / doesn't need a spoiler)
+
+Current features:
+Items that interact in battle, in new unexpected ways
+Combinations of items in the ship, in new unexpected ways
+Exploration, and getting a feeling of space
+Story through adventures and unusual events
+Indirect effects of the player’s actions cascading into broad events that come back
+Ideal game qualities: personal investment (player name, choices), variety / differentiation, power up (skills, level), strategy and choices, every fight should feel different. mushroom fights for example. people love and remember *hard* games
+Much of the fun in Nethack is dying in different ways. Need to make the game hard.
+There's everything from underwater metropolises to small farming villages, ruins of forgotten civilizations, creepy dungeons and hightec research labs.
+The best sci-fi are westerns? (star trek, mad max)
+Abilities: everything should have a single clear effect (no double targeting). The intrigue of abilities is in their selection on the hero and interactions, not their complexity on the battlefield. On the battlefield it shouldn’t take a ton of computational thinking, but would be good to have lots of options to aid in the strategy.
+No auras and persistent effects - these can be handled as abilities that apply buffs and debuffs. Only downside is need to spend an action to use them, but that’s largely the interactive portion. And works out on combining abilities a lot better.
+How to procedurally generate random content that leads to memorable stories? Battles, quests, artifacts, exploration and morale. Each of these have multiple items that can interact and be planned for, and many ways they can get interesting.
+Can also add less valuable stuff to the pot, and random fun things can come out of it.
+
+What compels a player to want to play? Explore at start, grow power in mid, plot at end. Anything else? Crafting and control of systems?
+D&D-range damage (levels 1 - 20, ~6 hp per level) for simplicity
+In Zelda you wander around looking for the dungeons, but there are also secrets and places to buy stuff on the way, and gather coins which gives a nice mix of collecting and exploration
+Space should be easy to navigate (though not all areas are safe)
+Building buildings is a minor element of the game. Don’t want it to get into an empire building game. Just a bit to aid in the core gameplay: exploration (variety + choice), grinding (better stuff), and emergent (memorable experience).
+Project was started sometime around the summer 2013?
+When sending initial links, put it under a version path, and link the latest, do avoid save conflicts?
+1 page overview
+1 page code structure
+1 page how to play?
+
+Game attempts to recreate an experience in starflight- didn’t understand the plot, just wandered around space. Found a powerful alien artifact. Which was supposed to be based on hits, but could just wander around and find.
+Combined with the experience of remote asteroids and mining.
+Focus on emergent gameplay inspired from games like nethack, and dwarf fortress (which i haven’t actually played, but greatly admire), terraria to a lesser degree
+Game is inspired by starflight & star control (both inspired from elite), nethack (itself inspired from rogue), heroes of might & magic and its predecessor king’s bounty. A bit of diablo maybe.
+It’s my fond hope that this game will inspire a well-funded development team to make a 3D emergent open-ended space adventure.
+Failing that I’d love to have a small group of fans that help me improve this.
+Go into the design elements
+Design and especially game design seems to be as much about knowing what to avoid adding, as it is figuring out what it needs to be. Just stuff that adds to the experience. So what is the experience? Focus on fun emergent stories - like all the stories of the ways we’ve died in nethack.
+
+Plot needs to be seamless. Doesn’t need to be complicated - just fun and memorable.
+  http://www.gamesetwatch.com/2007/06/gamesetq_your_oh_my_god_moment.php
+	Starflight: THE ANCIENTS -ARE- ENDURIUM! The Keyser Soze of computer games.
+	John H. | June 21, 2007 7:36 PM
+	
+	
+What really happened: Only one player in the cornfield. They have an imaginary friend. They find the WMD. They turn their imaginary friend into a real friend. The imaginary friend runs. That’s where the game starts- the imaginary friend IS the real friend. Who thinks they are searching for their friend. The real original character is searching for their friend, to change them back into imaginary.
+
+Updated plot and cutscenes:
+The ship does abduct the player
+Because the pilot is a clone of the friend and knows what the friend is going to do
+So they fly away and get drunk and end up at a remote bar
+The bartender prods them awake
+The pilot and the player get drunk, and end up at a bar (the bartender could mentioned they woke up)
+The pilot is shocked at seeing the player being real, says he thought it was a dream. And to watch out because his life is in jeopardy. And he leaves the ship. 
+Can have bits to mark each of these (or a set, something on S$)
+“Chapter 1: The Truth Is Out There (And It Ran Away)”
+“Chapter 2: The Plot Thickens” <first seeing alphas>
+“Chapter 3: Hit the Wall / Alien space bats with Chekhov's gun? <hitting the wall>
+“Chapter 4: For the Second Time, For the Last Time, Before the First Time...” Jeremy Bearimy
+“Chapter 5: This looks familiar...” (back in time)
+“Chapter 6 (or 5.5?): You get the idea...” (back in time 2…)
+The box can fall apart at the end, while the player contemplates what to do with it. And there’s nothing inside.
+**Bear with me here**:
+Every time a fragment is activated around the WMD it goes back to time -1
+If the player is at time -1 at the cornfield they hide behind a tree and watch the main plot unfold
+And then just leave back to the surface view?
+If the player is at time -1 at the cornfield they know the location of the WMD, so they pick it up, while seeing others hide behind a tree
+The player can equip the WMD. In which case the game continues and the friend ran away, and they need to go back in time again (either by activating the fragment w/ wmd, or by destroying the WMD.
+Important to equip the WMD, to fly around space and beat up baddies
+Complicated if lose the WMD without destroying it - Maybe just can’t give it to NPCs (with great power comes great responsibility, and X refuses to take that kind of responsibility).
+If destroy it, don’t go back in time. Just end the game, saving the universe, but never to see your friend again. Or maybe your friend is just at the bar? - see below, just need to build the bar to win.
+And the alphas wouldn’t proliferate the universe? So they just find fragments at the temples? Would there even be temples? (could be part of the pre-existing plot, with scattered fragments).
+If the player goes back to the cornfield with the WMD, they find the WMD again. And more people hiding in trees and it all happens again. (keep adding more trees?)
+This is important, because for a chilling moment.
+Don’t have the companion aliens saved hiding behind the tree the second time, just make it the player (have the aliens disappear the first time when hiding?)
+Really going back again means they would see the other player find the WMD again?
+Just have the other player standing around. Not hiding in trees. Just saying “what the?” And the active player gets the WMD again. And could have a bunch of these standing around.
+The player needs to destroy the WMD (just trash it).
+And if they do that in the cornfield they win? Or need to build a bar to get their friend to visit?
+So the friend ran away. And if the player builds a bar? Gets built on the cornfield? And one final cutscene with the friend walking into the bar? Which pans up.
+And the final dialog. Turns out they didn’t care, and just get back to drinking.
+Why can’t build a bar if picking up the WMD??
+Maybe destroying the WMD isn’t important? Just a risk (and mentioned in the credits, and the number of copies?)
+(November 5 1955)
+It should work well to always travel back to the same time from the WMD, just have different cutscenes that make general sense
+Have all the chars in hats saying stuff. Maybe take it from one of them?
+Player can get the WMD. They need to find their friend.
+Also may be no bars on the planet to start.
+Reminder that the plot should be simple and understandable
+
+Pitch
+1M1 types of drinks (can move this to design notes)
+Sure, everyone has infinite stars. But do they have infinits [bars, drinks, stories, tragedies]
+www.starflight3.org. Hope it inspires, as past as inspired me.
+
+

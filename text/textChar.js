@@ -1,0 +1,107 @@
+(function() {
+  SU.addProps(ST, {
+  charTitle: function(seed, level) {
+		let array = ST.charTitleText[level];
+		return ST.randText(array, seed);
+  },
+	
+  charTitleText: [
+		[""], // L0 unused.
+    ["Rumor of"],
+    ["Unknown"],
+    ["Journey of"],
+    ["Nameless"],
+    ["Adventurer"],
+    ["Young"],
+    ["Explorer"],
+    ["Capable"],
+    ["Expedition of"],
+    ["Famous"],
+    ["Ballad of"],
+    ["Distinguished"],
+    ["Intrepid"],
+    ["Odyssey of"],
+    ["Great"],
+    ["Revered"],
+    ["Song of"],
+    ["Executor"],
+    ["Legend of"],
+    ["Elite"],
+	],
+	
+			level_names: {
+	combat: [
+		"Undef",  // Level 0.
+		"Novice",
+		"Shield Bearer",
+		"Adventurer",
+		"Combatant",
+		"Militiant",
+		"Bachelor",
+		"Mercenary",
+		"Fighter",
+		"Soldier",
+		"Warrior",
+		"Trooper",
+		"Gladiator",
+		"Legionary",
+		"Centurion",
+		"Crusader",
+		"Guardian",
+		"Champion",
+		"Hero",
+		"Idol",
+		"Elite",
+	],
+	trade: [
+		"Undef",
+		"Beginner",
+		"Pedler",
+		"Hawker",
+		"Huckster",
+		"Barterer",
+		"Buyer",
+		"Seller",
+		"Supplier",
+		"Marketeer",
+		"Retailer",
+		"Wholesaler",
+		"Broker",
+		"Merchant",
+		"Agent",
+		"Dealer",
+		"Purveyor",
+		"Distributor",
+		"Vendor",
+		"Enterpriser",
+		"Elite",
+	],
+	// Many in homage to Nethack archaeologist.
+	arch: [
+		"Undef",
+		"Apprentice",
+		"Troglodyte",
+		"Site Steward",
+		"Antique",
+		"Digger",
+		"Hermit",
+		"Surveyor",
+		"Analyst",
+		"Field Worker",
+		"Investigator",
+		"Exhumer",
+		"Excavator",
+		"Spelunker",
+		"Speleologist",
+		"Prehistorian",
+		"Historian",
+		"Paleontologist",
+		"Collector",
+		"Curator",
+		"Elite",
+	],				
+}
+}
+)
+})();
+

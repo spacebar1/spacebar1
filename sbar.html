@@ -1,0 +1,221 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <head>
+            <style>
+                body {margin: 0px;padding: 0px; background:#000; cursor:crosshair;}
+                #container {
+                    //position:absolute;left:300px;top:100px;
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                    align: center;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    border:0px;
+                    border-width:0px;border-style:solid;border-color:#000000;
+
+
+                    //margin-left:-640px;
+
+                }	
+                #importdiv {
+                    visibility:hidden;
+                    position:absolute;left:300px;top:100px;
+                    border-width:1px;border-style:solid;border-color:#000;
+                    width: 270px;
+                    height: 100px;
+                    font-size:10px;font-family:sans-serif;
+                }	 
+
+                #importarea {
+                    position:relative;left:10px;top:10px;
+                    font-size:10px;font-family:sans-serif;
+                    width: 140px;
+                    height: 80px;
+                }	
+                #exportdiv {
+                    visibility:hidden;
+                }
+                #optionsdiv {
+                    visibility:hidden;
+                }
+                #endgamediv {
+                    visibility:hidden;
+                }
+                #exportarea {
+                    position:relative;left:500px;top:275px;
+                    font-size:10px;font-family:sans-serif;
+                    width: 240px;
+                    height: 80px;
+                }
+                #summaryarea {
+                    position:relative;left:50px;top:50px;
+                    font-size:12px;font-family:serif;
+                    width: 1000px;
+                    height: 700px;
+                }
+            </style>
+        </head>
+        <body>
+        <!--body bgcolor=black-->
+					<!--button class="fullscreenbutton" onclick="SU.GoFullscreen()">Go Fullscreen</button-->
+					
+          <div id="container"></div>
+            <script src="core/gameengine.js"></script> <!-- prereq -->
+            <script src="core/events.js"></script>
+            <script src="core/crew.js"></script>
+            <script src="core/ship.js"></script>
+            <script src="core/position.js"></script>
+            <script src="core/gamedata.js"></script>
+
+            <script src="utils/zseedrandom.js"></script>
+            <script src="utils/utils.js"></script> <!-- prereq -->
+            <script src="utils/button.js"></script> <!-- prereq -->
+            <script src="utils/textlayout.js"></script> <!-- prereq -->
+
+            <script src="icon/Icon.js"></script> <!-- prereq -->
+            <script src="icon/iconAlien.js"></script>
+            <script src="icon/iconAsteroid.js"></script>
+            <script src="icon/iconBelt.js"></script>
+            <script src="icon/iconBuilding.js"></script>
+            <script src="icon/iconCharDetails.js"></script>
+            <script src="icon/iconCustomBuilding.js"></script> <!-- extends icon building -->
+            <script src="icon/iconBeltDust.js"></script>
+            <script src="icon/iconExplode.js"></script>
+            <script src="icon/iconFragmentText.js"></script>
+            <script src="icon/iconStructNebula.js"></script>
+            <script src="icon/iconMapShip.js"></script>
+            <script src="icon/iconMapRegion.js"></script>
+            <script src="icon/iconMapSystems.js"></script>
+            <script src="icon/iconMapStruct.js"></script>
+            <script src="icon/iconMapRace.js"></script>
+            <script src="icon/iconMapAlpha.js"></script>
+            <script src="icon/iconMine.js"></script>
+            <script src="icon/iconQuestTarget.js"></script>
+            <script src="icon/iconTempleEffect.js"></script>
+            <script src="icon/iconPlanet.js"></script>
+            <script src="icon/iconTilesShip.js"></script>
+            <script src="icon/iconTilesAlien.js"></script>
+            <script src="icon/iconTilesCargo.js"></script>
+            <script src="icon/iconArtifact.js"></script>
+
+            <script src="tiers/Tier.js"></script> <!-- prereq -->
+            <script src="tiers/Renderer.js"></script> <!-- prereq -->
+            <script src="tiers/Data.js"></script> <!-- prereq -->
+            <script src="tiers/8testpage.js"></script>
+            <script src="tiers/7complexR.js"></script>
+            <script src="tiers/7artifactD.js"></script>
+            <script src="tiers/7artiFindR.js"></script>
+            <script src="tiers/7buildingFindR.js"></script>
+            <script src="tiers/7charR.js"></script>
+            <script src="tiers/7optionsR.js"></script>
+            <script src="tiers/7loadR.js"></script>
+            <script src="tiers/7textR.js"></script>
+            <script src="tiers/7startmenu.js"></script>
+            <script src="tiers/6areamapR.js"></script>
+            <script src="tiers/6lookaroundR.js"></script>
+            <script src="tiers/5regionD.js"></script>
+            <script src="tiers/5starmapT.js"></script>
+            <script src="tiers/5starmapR.js"></script>
+            <script src="tiers/4systemD.js"></script>
+            <script src="tiers/4systemT.js"></script>
+            <script src="tiers/4systemR.js"></script>
+            <script src="tiers/2planetD.js"></script>
+            <script src="tiers/2planetT.js"></script>
+            <script src="tiers/2planetR.js"></script>
+            <script src="tiers/3terrain.js"></script>
+            <script src="tiers/3sphere.js"></script>
+            <script src="tiers/2beltD.js"></script>
+            <script src="tiers/2beltT.js"></script>
+            <script src="tiers/2beltR.js"></script>
+            <script src="tiers/1buildingD.js"></script>
+            <script src="tiers/1buildingT.js"></script>
+            <script src="tiers/1buildingR.js"></script>
+            <script src="tiers/1buildingAlienR.js"></script>
+            <script src="tiers/1buildingTrade.js"></script>
+            <script src="tiers/0questR.js"></script>
+            <script src="tiers/0questD.js"></script>
+            <script src="tiers/0hireR.js"></script>
+            <script src="tiers/0planetsideR.js"></script>
+            <script src="tiers/0informationR.js"></script>
+            <script src="tiers/0obeliskR.js"></script>
+            <script src="tiers/0ruinsR.js"></script>
+
+            <script src="text/textUtils.js"></script> <!-- first -->
+            <script src="text/textAbility.js"></script>
+            <script src="text/textArtifact.js"></script>
+            <script src="text/textBuilding.js"></script>
+            <script src="text/textBackstory.js"></script>
+            <script src="text/textBar.js"></script>
+            <script src="text/textCargo.js"></script>
+            <script src="text/textChar.js"></script>
+            <script src="text/textDrinks.js"></script>
+            <script src="text/textFiller.js"></script>
+            <script src="text/textGen.js"></script>
+            <script src="text/textPin.js"></script>
+            <script src="text/textQuest.js"></script>
+            <script src="text/textStructs.js"></script>
+
+						<!-- After text libraries -->
+            <script src="cutscenes/introTerminal.js"></script>
+            <script src="cutscenes/introIcons.js"></script>
+            <script src="cutscenes/introT.js"></script>
+            <script src="cutscenes/introR.js"></script>
+            <script src="cutscenes/creditsR.js"></script>
+            <script src="cutscenes/highscoresR.js"></script>
+            <script src="cutscenes/gameSummaryR.js"></script>
+						
+						<!-- Tact -->
+            <script src="tact/Effect.js"></script>
+            <script src="tact/TUtils.js"></script>
+            <script src="tact/AllEffects.js"></script>
+            <script src="tact/BattleLogR.js"></script>
+            <script src="tact/TactD.js"></script>
+            <script src="tact/TactT.js"></script>
+            <script src="tact/TactR.js"></script>
+						
+            <script src="tact/TurnEngine.js"></script>
+            <script src="tact/zseedrandom.js"></script>
+            <script src="tact/Map.js"></script>
+            <script src="tact/MapEffects.js"></script>
+            <script src="tact/TerrainMod.js"></script>
+            <script src="tact/Hero.js"></script>
+            <script src="tact/Ability.js"></script>
+            <script src="tact/Target.js"></script>
+
+            <script src="tact/AI.js"></script>
+            
+            <script src="tact/HudHelper.js"></script>
+            <script src="tact/HeroView.js"></script>
+            
+            <script src="encounter/MapBuilder.js"></script>
+            <script src="encounter/EnemyBuilder.js"></script>
+            <script src="encounter/BattleBuilder.js"></script>
+            <script src="encounter/Skill.js"></script>  <!-- needs to be afer effects -->
+            <script src="encounter/PersistEffect.js"></script>  <!-- needs to be afer effects -->
+            <script src="encounter/EncounterD.js"></script>
+            <script src="encounter/EncounterT.js"></script>
+            <script src="encounter/EncounterR.js"></script>
+            <script src="encounter/HandleWinR.js"></script>
+            <script src="encounter/HandleLossR.js"></script>
+
+            <script src="travel/three.min.js"></script>
+            <script src="travel/travelR.js"></script>
+            <script src="travel/helm.js"></script>
+
+            <script>
+
+                window['SBarStart']();
+
+            </script>
+
+            <div id="exportdiv"></div>
+            <div id="optionsdiv"></div>
+            <div id="endgamediv"></div>
+          </div>
+        </body>
+    </html>
+
+
+
